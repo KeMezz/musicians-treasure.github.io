@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b7e602a11f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Musicians Treasure</title>
+</head>
+<body>
+    <header>
+        <i class="xi-bars"></i>
+        <div class="header___logo">
+            Musicians Tresure
+        </div>
+        <div class="header___user">
+            <a href="#blankForCats" class="user___icon">
+                <i class="xi-search"></i>
+            </a>
+            <div class="user___icon">
+                <i class="xi-heart-o"></i>
+            </div>
+            <div class="user___icon">
+                <i class="xi-cart-o"></i>
+            </div>
+            <div class="user___icon">
+                <i class="xi-user-o"></i>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav___ul">
+            <li class="nav___list"><a href="#">기타</a></li>
+            <li class="nav___list"><a href="#">베이스</a></li>
+            <li class="nav___list"><a href="#">드럼</a></li>
+            <li class="nav___list"><a href="#">키보드</a></li>
+            <li class="nav___list"><a href="#">미디</a></li>
+            <li class="nav___list"><a href="#">레코딩</a></li>
+            <li class="nav___list"><a href="#">앰프</a></li>
+            <li class="nav___list"><a href="#">이펙터</a></li>
+            <li class="nav___list"><a href="#">악세사리</a></li>
+            <li class="nav___list"><a href="#">중고</a></li>
+            <li class="nav___list"><a href="#">특별세일</a></li>
+            <li class="nav___list"><a id="allCats" href="#">전체 카테고리</a></li>
+        </ul>
+
+        <!-- 서브메뉴 #1: 기타 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>일렉기타</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">PRS</a></li>
+                        <li><a href="#">Suhr</a></li>
+                        <li><a href="#">Squire</a></li>
+                    </ul>
+                    <ul>
+                        <h4>어쿠스틱 기타</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Maton</a></li>
+                        <li><a href="#">Lakewood</a></li>
+                    </ul>
+                    <ul>
+                        <h4>이펙터</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                        <li><a href="#">스트링</a></li>
+                        <li><a href="#">케이블</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">스트랩락</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #2: 베이스 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>일렉 베이스</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">PRS</a></li>
+                        <li><a href="#">Suhr</a></li>
+                        <li><a href="#">Squire</a></li>
+                    </ul>
+                    <ul>
+                        <h4>어쿠스틱 베이스</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                    </ul>
+                    <ul>
+                        <h4>베이스 이펙터</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                        <li><a href="#">스트링</a></li>
+                        <li><a href="#">케이블</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">스트랩락</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #3: 드럼 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>어쿠스틱 드럼</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                    </ul>
+                    <ul>
+                        <h4>전자 드럼</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                    </ul>
+                    <ul>
+                        <h4>이펙터</h4>
+                        <li><a href="#">더블 킥 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                    </ul>
+                    <ul>
+                        <h4>스피커 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #4: 키보드 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>전자 피아노</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                    </ul>
+                    <ul>
+                        <h4>그랜드 피아노</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                    </ul>
+                    <ul>
+                        <h4>미디 키보드</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #5: 미디 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>미디 키보드</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                    </ul>
+                    <ul>
+                        <h4>런치패드</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                    </ul>
+                    <ul>
+                        <h4>프로듀싱</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #5: 레코딩 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>콘덴서 마이크</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                    </ul>
+                    <ul>
+                        <h4>다이나믹 마이크</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                    </ul>
+                    <ul>
+                        <h4>이펙터</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #6: 앰프 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>기타 앰프</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">PRS</a></li>
+                        <li><a href="#">Suhr</a></li>
+                        <li><a href="#">Squire</a></li>
+                    </ul>
+                    <ul>
+                        <h4>베이스 앰프</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Maton</a></li>
+                        <li><a href="#">Lakewood</a></li>
+                    </ul>
+                    <ul>
+                        <h4>모니터링 스피커</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                        <li><a href="#">스트링</a></li>
+                        <li><a href="#">케이블</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">스트랩락</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #7: 이펙터 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>기타용 이펙터</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">PRS</a></li>
+                        <li><a href="#">Suhr</a></li>
+                        <li><a href="#">Squire</a></li>
+                    </ul>
+                    <ul>
+                        <h4>베이스용 이펙터</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Maton</a></li>
+                        <li><a href="#">Lakewood</a></li>
+                    </ul>
+                    <ul>
+                        <h4>멀티 이펙터</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>페달보드</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                        <li><a href="#">스트링</a></li>
+                        <li><a href="#">케이블</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">스트랩락</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #8: 악세사리 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>스트랩과 스트랩락</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                    </ul>
+                    <ul>
+                        <h4>대충 악세사리 비슷한 것</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                    </ul>
+                    <ul>
+                        <h4>적당한 서브메뉴</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #9: 중고 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>인증 중고</h4>
+                        <li><a href="#">Fender</a></li>
+                    </ul>
+                    <ul>
+                        <h4>유저 중고</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                    </ul>
+                    <ul>
+                        <h4>장터 게시글</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                    </ul>
+                    <ul>
+                        <h4>사고팔고</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #10: 특별세일 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>일렉기타</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">PRS</a></li>
+                        <li><a href="#">Suhr</a></li>
+                        <li><a href="#">Squire</a></li>
+                    </ul>
+                    <ul>
+                        <h4>어쿠스틱 기타</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Maton</a></li>
+                        <li><a href="#">Lakewood</a></li>
+                    </ul>
+                    <ul>
+                        <h4>이펙터</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                        <li><a href="#">스트링</a></li>
+                        <li><a href="#">케이블</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">스트랩락</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 서브메뉴 #11: 전체 카테고리 -->
+        <div class="nav___submenu">
+            <div class="submenu___wrapper">
+                <div class="submenu___top">
+                    <a href="#">
+                        전체 카테고리
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+                <div class="submenu___cat">
+                    <ul>
+                        <h4>일렉기타</h4>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Musicman</a></li>
+                        <li><a href="#">James Tyler</a></li>
+                        <li><a href="#">Ibanez</a></li>
+                        <li><a href="#">PRS</a></li>
+                        <li><a href="#">Suhr</a></li>
+                        <li><a href="#">Squire</a></li>
+                    </ul>
+                    <ul>
+                        <h4>어쿠스틱 기타</h4>
+                        <li><a href="#">Martin</a></li>
+                        <li><a href="#">Talyor</a></li>
+                        <li><a href="#">Gibson</a></li>
+                        <li><a href="#">Fender</a></li>
+                        <li><a href="#">Cort</a></li>
+                        <li><a href="#">Yamaha</a></li>
+                        <li><a href="#">Maton</a></li>
+                        <li><a href="#">Lakewood</a></li>
+                    </ul>
+                    <ul>
+                        <h4>이펙터</h4>
+                        <li><a href="#">드라이브 페달</a></li>
+                        <li><a href="#">리버브 페달</a></li>
+                        <li><a href="#">익스프레션 페달</a></li>
+                        <li><a href="#">기능성 페달</a></li>
+                        <li><a href="#">파워 서플라이</a></li>
+                        <li><a href="#">멀티 이펙터</a></li>
+                    </ul>
+                    <ul>
+                        <h4>앰프 & 악세사리</h4>
+                        <li><a href="#">앰프 헤드</a></li>
+                        <li><a href="#">앰프 캐비넷</a></li>
+                        <li><a href="#">콤보 앰프</a></li>
+                        <li><a href="#">스트링</a></li>
+                        <li><a href="#">케이블</a></li>
+                        <li><a href="#">스탠드</a></li>
+                        <li><a href="#">스트랩락</a></li>
+                    </ul>
+                </div>
+                <div class="submenu___more">
+                    <a href="#">
+                        더보기
+                        <i class="xi-angle-right-min"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <main>
+        <div class="main___slide">
+            <div class="slide___left">
+                <div class="left___top active">
+                    sale
+                </div>
+                <div class="left___top">
+                    event
+                </div>
+                <div class="left___top">
+                    alert
+                </div>
+                <div class="left___top">
+                    coupon
+                </div>
+                <div class="left___top">
+                    fifth
+                </div>
+                <div class="left___text active">
+                    최고의 악기를<br>
+                    최저의 가격에 살 수 있는<br>
+                    2021 가을 세일!
+                </div>
+                <div class="left___text">
+                    두 번째 배너에<br>
+                    넣을 수 있는 적절한<br>
+                    텍스트가 여기 있다!
+                </div>
+                <div class="left___text">
+                    세 번째 배너에<br>
+                    넣을 수 있는 적절한<br>
+                    텍스트가 여기 있다!
+                </div>
+                <div class="left___text">
+                    네 번째 배너에<br>
+                    넣을 수 있는 적절한<br>
+                    텍스트가 여기 있다!
+                </div>
+                <div class="left___text">
+                    다섯 번째 배너에<br>
+                    넣을 수 있는 적절한<br>
+                    텍스트가 여기 있다!
+                </div>
+                <div class="left___control">
+                    <div class="control___page">
+                        <div class="page___circle active"></div>
+                        <div class="page___circle"></div>
+                        <div class="page___circle"></div>
+                        <div class="page___circle"></div>
+                        <div class="page___circle"></div>
+                    </div>
+                    <div class="control___btns">
+                        <div id="btns___pauseplay" class="">
+                            <i class="xi-pause"></i>
+                            <i class="xi-play"></i>
+                        </div>
+                        <div id="btns___left">
+                            <i class="xi-angle-left-min"></i>
+                        </div>
+                        <div id="btns___right">
+                            <i class="xi-angle-right-min"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide___right">
+                <img class="right___image active" src="img/pictures/bass-guitar.jpg" alt="배너 이미지">
+                <img class="right___image" src="img/pictures/fixing-instruments.jpg" alt="배너 이미지">
+                <img class="right___image" src="img/pictures/acc-guitar.jpg" alt="배너 이미지">
+                <img class="right___image" src="img/pictures/beginer-player.jpg" alt="배너 이미지">
+                <img class="right___image" src="img/pictures/delivering.jpg" alt="배너 이미지">
+            </div>
+        </div>
+    </main>
+    <section class="events">
+        <div class="event">
+            <img src="img/pictures/hollow-guitar.jpg" alt="모던 기타 기획전">
+            <div class="event___text">
+                <h3>현 시대 가장 핫한 모던 기타 기획전</h3>
+                <p>최대 50% 할인까지</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="img/pictures/concert.jpg" alt="모던 기타 기획전">
+            <div class="event___text">
+                <h3>부티크 브랜드 국내 독점 판매중</h3>
+                <p>포데라, 알레바코폴로, 타일러 등 대거 입고 완료</p>
+            </div>
+        </div>
+        <div class="event">
+            <img src="img/pictures/beginer-player.jpg" alt="모던 기타 기획전">
+            <div class="event___text">
+                <h3>아동용, 초심자용 악기가 한 곳에!</h3>
+                <p>스콰이어, 사이어 등 국내 최대 재고 확보</p>
+            </div>
+        </div>
+    </section>
+    <div id="blankForCats"></div>
+    <section class="category">
+        <div class="cat___heading">
+            <h2 class="cat___h2">원하는 상품을 빠르게 찾아보세요</h2>
+            <div class="cat___search">
+                <i class="xi-search"></i>
+            </div>
+        </div>
+        <div class="cat___items">
+            <div class="cat___item">
+                <img src="img/icons/guitar.png" alt="기타">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/bass-guitar.png" alt="베이스">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/drum.png" alt="드럼">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/piano.png" alt="키보드">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/beat.png" alt="미디">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/mic.png" alt="레코딩">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/amp.png" alt="앰프">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/effects-pedal.png" alt="이펙터">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/guitar-pick.png" alt="악세사리">
+            </div>
+            <div class="cat___item">
+                <img src="img/icons/recycling-box.png" alt="중고">
+            </div>
+        </div>
+    </section>
+    <div class="banner">
+        <div class="banner___inner">
+            <h3>카카오톡 플러스 친구 추가하면 지금 바로 1만원 상당의 할인 혜택이!</h3>
+        </div>
+    </div>
+    <section class="features">
+        <img class="features___img" src="img/pictures/delivering.jpg" alt="물류관리센터">
+        <div class="features___text">
+            <h3>
+                1만원 이상 구매 시 무료배송,<br>
+                멤버쉽 가입하면 무조건 무료배송.
+            </h3>
+            <h4>
+                뮤지션트레져 멤베쉽 알아보기
+                <i class="fas fa-arrow-circle-right"></i>
+            </h4>
+        </div class="features___item">
+        <img class="features___img" src="img/pictures/setup.jpg" alt="기타 셋업">
+        <div class="features___text">
+            <h3>
+                출고 직전,<br>
+                본사 테크니션이 직접 검수
+            </h3>
+            <h4>
+                검수 과정 살펴보기
+                <i class="fas fa-arrow-circle-right"></i>
+            </h4>
+        </div>
+        <img class="features___img" src="img/pictures/fixing-instruments.jpg" alt="악기 수리">
+        <div class="features___text">
+            <h3>
+                가격대 상관없이<br>
+                100% 고객에 맞춘 셋업 제공
+            </h3>
+            <h4>
+                셋업 신청서 작성하기
+                <i class="fas fa-arrow-circle-right"></i>
+            </h4>
+        </div>
+        <img class="features___img" src="img/pictures/guitar-shop.jpg" alt="본사 스토어">
+        <div class="features___text">
+            <h3>
+                전국 어디든<br>
+                업계 최저가 보장
+            </h3>
+            <h4>
+                뮤지션 트레져가 최저가로 제공할 수 있는 이유
+                <i class="fas fa-arrow-circle-right"></i>
+            </h4>
+        </div>
+    </section>
+    <article class="article">
+        <div class="article___heading">
+            <h2>뮤지션 트레져 아티클</h2>
+            <span class="article___more___PC">전체보기</span>
+        </div>
+        <div class="article___items">
+            <div class="article___item">
+                <img src="img/pictures/mini-guitar.jpg" alt="미니 기타">
+                <div class="article___text">
+                    <p>2021년 10월 26일</p>
+                    <h3>미니 기타의 매력에 빠져드는 이유</h3>
+                </div>
+            </div>
+            <div class="article___item">
+                <img src="img/pictures/beginer-player.jpg" alt="기타 초보자">
+                <div class="article___text">
+                    <p>2021년 10월 24일</p>
+                    <h3>초심자도 알기 쉬운 악기 고르는 방법</h3>
+                </div>
+            </div>
+            <div class="article___item">
+                <img src="img/pictures/home-studio-guitar.jpg" alt="레코딩 스튜디오">
+                <div class="article___text">
+                    <p>2021년 10월 20일</p>
+                    <h3>룸 어쿠스틱에 대해 완벽하게 파헤치다</h3>
+                </div>
+            </div>
+            <div class="article___item">
+                <img src="img/pictures/guitar-strings.jpg" alt="기타 지판과 현">
+                <div class="article___text">
+                    <p>2021년 10월 15일</p>
+                    <h3>기타 스트링은 어떻게 만들어지나요?</h3>
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="banner">
+        <div class="banner___inner">
+            <h3>뉴스레터 신청하고 3% 할인 쿠폰 발급받기</h3>
+        </div>
+    </div>
+    <section class="faq">
+        <h2>자주 묻는 질문</h2>
+        <div class="faq___item">
+            <div class="faq___question">
+                <h3>뮤지션트레져란 무엇인가요?</h3>
+                <i class="xi-angle-down"></i>
+            </div>
+            <div class="faq___answer">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium aut fuga expedita quisquam ut tenetur optio modi
+                    quam. Sit similique aperiam reprehenderit ad temporibus error vel ea, dolorem, eos voluptate optio deleniti nemo et
+                    atque possimus architecto laudantium maxime corrupti a exercitationem tempora odit unde. Veniam a laudantium magnam
+                    sapiente, tenetur fugiat. Nam modi distinctio, numquam itaque non alias? Omnis impedit maiores, laboriosam eius, placeat
+                    modi accusamus adipisci sed itaque aspernatur nulla optio corrupti distinctio quisquam laborum unde ratione laudantium
+                    numquam mollitia voluptatibus atque pariatur. Aliquid, provident ab. Repellat dignissimos itaque pariatur iusto totam
+                    velit ratione delectus aut dolorum quis.
+                </p>
+            </div>
+        </div>
+        <div class="faq___item">
+            <div class="faq___question">
+                <h3>무료배송 조건이 어떻게 되나요?</h3>
+                <i class="xi-angle-down"></i>
+            </div>
+            <div class="faq___answer">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium aut fuga expedita quisquam ut tenetur optio modi
+                    quam. Sit similique aperiam reprehenderit ad temporibus error vel ea, dolorem, eos voluptate optio deleniti nemo et
+                    atque possimus architecto laudantium maxime corrupti a exercitationem tempora odit unde. Veniam a laudantium magnam
+                    sapiente, tenetur fugiat. Nam modi distinctio, numquam itaque non alias? Omnis impedit maiores, laboriosam eius, placeat
+                    modi accusamus adipisci sed itaque aspernatur nulla optio corrupti distinctio quisquam laborum unde ratione laudantium
+                    numquam mollitia voluptatibus atque pariatur. Aliquid, provident ab. Repellat dignissimos itaque pariatur iusto totam
+                    velit ratione delectus aut dolorum quis.
+                </p>
+            </div>
+        </div>
+        <div class="faq___item">
+            <div class="faq___question">
+                <h3>멤버십 서비스에 가입하면 어떤 점이 좋은가요?</h3>
+                <i class="xi-angle-down"></i>
+            </div>
+            <div class="faq___answer">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium aut fuga expedita quisquam ut tenetur optio modi
+                    quam. Sit similique aperiam reprehenderit ad temporibus error vel ea, dolorem, eos voluptate optio deleniti nemo et
+                    atque possimus architecto laudantium maxime corrupti a exercitationem tempora odit unde. Veniam a laudantium magnam
+                    sapiente, tenetur fugiat. Nam modi distinctio, numquam itaque non alias? Omnis impedit maiores, laboriosam eius, placeat
+                    modi accusamus adipisci sed itaque aspernatur nulla optio corrupti distinctio quisquam laborum unde ratione laudantium
+                    numquam mollitia voluptatibus atque pariatur. Aliquid, provident ab. Repellat dignissimos itaque pariatur iusto totam
+                    velit ratione delectus aut dolorum quis.
+                </p>
+            </div>
+        </div>
+        <div class="faq___item">
+            <div class="faq___question">
+                <h3>셋업값을 지정해서 배송받고 싶은데 어떻게 하면 되나요?</h3>
+                <i class="xi-angle-down"></i>
+            </div>
+            <div class="faq___answer">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium aut fuga expedita quisquam ut tenetur optio modi
+                    quam. Sit similique aperiam reprehenderit ad temporibus error vel ea, dolorem, eos voluptate optio deleniti nemo et
+                    atque possimus architecto laudantium maxime corrupti a exercitationem tempora odit unde. Veniam a laudantium magnam
+                    sapiente, tenetur fugiat. Nam modi distinctio, numquam itaque non alias? Omnis impedit maiores, laboriosam eius, placeat
+                    modi accusamus adipisci sed itaque aspernatur nulla optio corrupti distinctio quisquam laborum unde ratione laudantium
+                    numquam mollitia voluptatibus atque pariatur. Aliquid, provident ab. Repellat dignissimos itaque pariatur iusto totam
+                    velit ratione delectus aut dolorum quis.
+                </p>
+            </div>
+        </div>
+        <div class="faq___item">
+            <div class="faq___question">
+                <h3>고장난 제품을 배송받았습니다. 어떻게 하면 되나요?</h3>
+                <i class="xi-angle-down"></i>
+            </div>
+            <div class="faq___answer">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium aut fuga expedita quisquam ut tenetur optio modi
+                    quam. Sit similique aperiam reprehenderit ad temporibus error vel ea, dolorem, eos voluptate optio deleniti nemo et
+                    atque possimus architecto laudantium maxime corrupti a exercitationem tempora odit unde. Veniam a laudantium magnam
+                    sapiente, tenetur fugiat. Nam modi distinctio, numquam itaque non alias? Omnis impedit maiores, laboriosam eius, placeat
+                    modi accusamus adipisci sed itaque aspernatur nulla optio corrupti distinctio quisquam laborum unde ratione laudantium
+                    numquam mollitia voluptatibus atque pariatur. Aliquid, provident ab. Repellat dignissimos itaque pariatur iusto totam
+                    velit ratione delectus aut dolorum quis.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer___wrapper">
+            <ul>
+                <h4>회사 정보</h4>
+                <li><a href="#">뮤지션트레져란?</a></li>
+                <li><a href="#">찾아오시는 길</a></li>
+                <li><a href="#">기업 연락처</a></li>
+            </ul>
+            <ul>
+                <h4>소셜 미디어</h4>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+            <ul>
+                <h4>파트너</h4>
+                <li><a href="#">에디터 구인공고</a></li>
+                <li><a href="#">테크니션 구인공고</a></li>
+                <li><a href="#">협력업체</a></li>
+            </ul>
+        </div>
+        <h5>Concept Design by Hyeong Jin Jeong</h5>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

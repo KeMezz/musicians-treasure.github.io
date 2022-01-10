@@ -1,0 +1,32 @@
+@import "_variables.scss";
+
+@mixin containerDefaults {
+    max-width: $maxWidth;
+    padding: $containerPadding;
+    margin: 0 auto;
+    @media (max-width: 950px) {
+        padding: 0 20px;
+    }
+}
+
+@mixin h2 {
+    font-family: $koreanFont;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    @media (max-width: 950px) {
+        font-size: 26px;
+    }
+}
+
+@mixin articleContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    transition: 0.2s;
+    cursor: pointer;
+    &:hover {
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+}
